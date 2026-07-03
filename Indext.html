@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDI Sidrap | Portal Resmi Desa Salobukkang</title>
+    <!-- Tailwind CSS & Font Inter -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- TOP BAR INFO -->
+    <div class="bg-emerald-950 text-emerald-200 text-xs py-2.5 px-4 border-b border-emerald-900">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span>📍 Kantor Desa Salobukkang, Kec. Dua Pitue, Kabupaten Sidenreng Rappang</span>
+            </div>
+            <span class="hidden md:inline font-medium text-emerald-400">Sistem Informasi Perangkat Desa Integratif</span>
+        </div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="bg-white/95 backdrop-blur-md text-slate-900 sticky top-0 z-50 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+            <!-- LOGO DAN IDENTITAS HIERARKI -->
+            <div class="flex items-center space-x-3">
+                <img src="1000728688.jpg" alt="Logo PPDI Resmi" class="h-12 w-12 object-contain">
+                <div>
+                    <h1 class="font-extrabold text-sm md:text-base text-emerald-900 leading-none tracking-tight">PPDI SIDRAP</h1>
+                    <p class="text-[11px] text-slate-500 font-semibold mt-0.5">Pemerintah Desa Salobukkang</p>
+                </div>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex space-x-7 text-xs uppercase tracking-wider font-bold text-slate-600">
+                <a href="#beranda" class="hover:text-emerald-600 transition">Beranda</a>
+                <a href="#statistik" class="hover:text-emerald-600 transition">Statistik</a>
+                <a href="#visi-misi" class="hover:text-emerald-600 transition">Visi Misi</a>
+                <a href="#pemerintahan" class="hover:text-emerald-600 transition">Aparatur Desa</a>
+                <a href="#layanan" class="hover:text-emerald-600 transition">Layanan Publik</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-emerald-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 px-4 py-4 space-y-3 font-semibold text-sm shadow-inner">
+            <a href="#beranda" class="block text-slate-700 hover:text-emerald-600">Beranda</a>
+            <a href="#statistik" class="block text-slate-700 hover:text-emerald-600">Statistik Desa</a>
+            <a href="#visi-misi" class="block text-slate-700 hover:text-emerald-600">Visi & Misi</a>
+            <a href="#pemerintahan" class="block text-slate-700 hover:text-emerald-600">Aparatur Desa</a>
+            <a href="#layanan" class="block text-slate-700 hover:text-emerald-600">Layanan Publik</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative bg-slate-900 text-white py-32 px-4 text-center overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(4, 47, 31, 0.85), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&q=80&w=1200');">
+        <div class="relative max-w-4xl mx-auto z-10">
+            <span class="bg-emerald-500/20 text-emerald-300 text-xs uppercase px-4 py-1.5 rounded-full font-bold tracking-widest border border-emerald-500/30">Maju, Mandiri, Digital</span>
+            <h2 class="text-3xl md:text-6xl font-black mt-6 mb-6 leading-tight tracking-tight">
+                Transformasi Digital & Kesejahteraan <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-emerald-300 to-teal-200">Perangkat Desa Salobukkang</span>
+            </h2>
+            <p class="text-sm md:text-lg text-slate-300 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                Portal resmi komunikasi Persatuan Perangkat Desa Indonesia (PPDI) Kabupaten Sidenreng Rappang. Sentralisasi informasi aparatur dan transparansi publik tingkat desa.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#layanan" class="bg-emerald-600 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-900/40 hover:bg-emerald-500 transition-all transform hover:-translate-y-0.5">Ajukan Surat Online</a>
+                <a href="#pemerintahan" class="bg-slate-800 text-slate-200 font-semibold px-7 py-3.5 rounded-xl border border-slate-700 hover:bg-slate-700 transition">Profil Perangkat</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTIK DESA -->
+    <section id="statistik" class="py-12 -mt-16 relative z-20 max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 text-center transform transition hover:scale-105">
+                <p class="text-xs text-slate-400 uppercase font-bold tracking-wider">Total Penduduk</p>
+                <h3 class="text-2xl md:text-3xl font-black text-slate-800 mt-1">2.483 Jiwa</h3>
+                <span class="text-[11px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-medium inline-block mt-2">Dusun I & II</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 text-center transform transition hover:scale-105">
+                <p class="text-xs text-slate-400 uppercase font-bold tracking-wider">Kepala Keluarga</p>
+                <h3 class="text-2xl md:text-3xl font-black text-slate-800 mt-1">694 KK</h3>
+                <span class="text-[11px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-medium inline-block mt-2">Kec. Dua Pitue</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 text-center transform transition hover:scale-105">
+                <p class="text-xs text-slate-400 uppercase font-bold tracking-wider">Luas Sawah</p>
+                <h3 class="text-2xl md:text-3xl font-black text-slate-800 mt-1">384 Hektar</h3>
+                <span class="text-[11px] text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full font-medium inline-block mt-2">Komoditas Padi</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 text-center transform transition hover:scale-105">
+                <p class="text-xs text-slate-400 uppercase font-bold tracking-wider">Aparatur Aktif</p>
+                <h3 class="text-2xl md:text-3xl font-black text-slate-800 mt-1">9 Anggota</h3>
+                <span class="text-[11px] text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full font-medium inline-block mt-2">Sertifikasi PPDI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISI & MISI -->
+    <section id="visi-misi" class="py-16 max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+        <div class="bg-gradient-to-br from-emerald-900 to-emerald-950 text-white p-8 rounded-3xl shadow-xl flex flex-col justify-between">
+            <div>
+                <span class="text-xs uppercase tracking-wider font-bold text-emerald-400">Haluan Kerja</span>
+                <h4 class="text-2xl font-black mt-2 mb-4 text-yellow-300">Visi Utama Desa</h4>
+                <p class="text-emerald-100 leading-relaxed font-light text-base italic">
+                    "Terwujudnya tata kelola pemerintahan Desa Salobukkang yang bersih, transparan, profesional, dan berbasis teknologi guna mempercepat pembangunan pertanian yang sejahtera, religius, dan berkeadilan."
+                </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-emerald-800 text-[11px] text-emerald-400 font-mono tracking-wider">
+                SINKRONISASI PROGRAM PPDI KABUPATEN SIDRAP
+            </div>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-200/60 flex flex-col justify-between">
+            <div>
+                <span class="text-xs uppercase tracking-wider font-bold text-slate-400">Misi Implementasi</span>
+                <h4 class="text-2xl font-bold mt-2 mb-4 text-slate-900">Misi Perangkat Desa</h4>
+                <ul class="space-y-3.5 text-sm text-slate-650">
+                    <li class="flex items-start"><span class="text-emerald-600 font-bold mr-2.5">✓</span> Mengoptimalkan reformasi birokrasi perangkat desa melalui peningkatan skill IT.</li>
+                    <li class="flex items-start"><span class="text-emerald-600 font-bold mr-2.5">✓</span> Menyelenggarakan administrasi desa berbasis aplikasi satu pintu guna kemudahan warga.</li>
+                    <li class="flex items-start"><span class="text-emerald-600 font-bold mr-2.5">✓</span> Membuka keterbukaan informasi penyaluran dana desa, BLT, dan subsidi pupuk petani.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRUKTUR APARATUR DESA -->
+    <section id="pemerintahan" class="bg-slate-100 py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-black text-slate-950 tracking-tight">Aparatur Pemerintah Desa Salobukkang</h3>
+                <p class="text-slate-500 mt-2 text-sm max-w-xl mx-auto">Sinergi pengurus kelembagaan yang terdaftar sebagai Anggota Resmi Persatuan Perangkat Desa Indonesia (PPDI) Sidenreng Rappang.</p>
+                <div class="w-12 h-1 bg-emerald-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Grid Kartu Foto -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Aparat 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 text-center p-6 flex flex-col items-center transform transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="w-32 h-32 rounded-full bg-slate-200 mb-4 overflow-hidden border-4 border-emerald-500 shadow-inner flex items-center justify-center text-slate-400">
+                        <img src="kades.jpg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" alt="H. Andi Sanurdin, S.Sos" class="w-full h-full object-cover">
+                        <svg class="w-14 h-14 hidden text-slate-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h4 class="font-bold text-base text-slate-900 leading-snug">H. Andi Sanurdin, S.Sos</h4>
+                    <p class="text-xs text-emerald-700 font-medium mt-1">Kepala Desa</p>
+                    <span class="mt-4 bg-slate-100 text-slate-700 text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-md border border-slate-200">Dewan Penasihat PPDI</span>
+                </div>
+
+                <!-- Aparat 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 text-center p-6 flex flex-col items-center transform transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="w-32 h-32 rounded-full bg-slate-200 mb-4 overflow-hidden border-4 border-emerald-600 shadow-inner flex items-center justify-center text-slate-400">
+                        <img src="sekdes.jpg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" alt="Muhammad Rusdi, S.P." class="w-full h-full object-cover">
+                        <svg class="w-14 h-14 hidden text-slate-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h4 class="font-bold text-base text-slate-900 leading-snug">Muhammad Rusdi, S.P.</h4>
+                    <p class="text-xs text-emerald-700 font-medium mt-1">Sekretaris Desa</p>
+                    <span class="mt-4 bg-emerald-50 text-emerald-800 text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-md border border-emerald-200">Anggota Aktif</span>
+                </div>
+
+                <!-- Aparat 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 text-center p-6 flex flex-col items-center transform transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="w-32 h-32 rounded-full bg-slate-200 mb-4 overflow-hidden border-4 border-emerald-600 shadow-inner flex items-center justify-center text-slate-400">
+                        <img src="kaur-keu.jpg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" alt="Fitriani, S.E." class="w-full h-full object-cover">
+                        <svg class="w-14 h-14 hidden text-slate-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h4 class="font-bold text-base text-slate-900 leading-snug">Fitriani, S.E.</h4>
+                    <p class="text-xs text-emerald-700 font-medium mt-1">Kaur Keuangan</p>
+                    <span class="mt-4 bg-emerald-50 text-emerald-800 text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-md border border-emerald-200">Anggota Aktif</span>
+                </div>
+
+                <!-- Aparat 4 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 text-center p-6 flex flex-col items-center transform transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="w-32 h-32 rounded-full bg-slate-200 mb-4 overflow-hidden border-4 border-emerald-600 shadow-inner flex items-center justify-center text-slate-400">
+                        <img src="kasi-pem.jpg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" alt="Aswar Anas" class="w-full h-full object-cover">
+                        <svg class="w-14 h-14 hidden text-slate-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h4 class="font-bold text-base text-slate-900 leading-snug">Aswar Anas</h4>
+                    <p class="text-xs text-emerald-700 font-medium mt-1">Kasi Pemerintahan</p>
+                    <span class="mt-4 bg-emerald-50 text-emerald-800 text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-md border border-emerald-200">Anggota Aktif</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULIR LAYANAN DIGITAL -->
+    <section id="layanan" class="py-20 max-w-4xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <span class="text-xs uppercase tracking-widest font-bold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">Layanan Mandiri Warga</span>
+            <h3 class="text-3xl font-black text-slate-950 mt-3">Permohonan Surat Keterangan Online</h3>
+            <p class="text-slate-500 mt-2 text-sm">Formulir digital untuk mempercepat verifikasi berkas oleh pengurus PPDI Desa Salobukkang.</p>
+        </div>
+        
+        <form class="bg-white p-8 rounded-3xl shadow-xl border border-slate-150 space-y-6" onsubmit="alert('Pengajuan Berhasil Dikirim ke Server Desa! Sila tunggu konfirmasi via WhatsApp.'); return false;">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Nama Lengkap (Sesuai KTP)</label>
+                    <input type="text" required placeholder="Contoh: Muhammad Amran" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-emerald-600 focus:bg-white transition">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Nomor Induk Kependudukan (NIK)</label>
+                    <input type="number" required placeholder="7314xxxxxxxxxxxx" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-emerald-600 focus:bg-white transition">
+                </div>
+            </div>
+            <div>
+                <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Jenis Surat yang Diperlukan</label>
+                <select class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-emerald-600 focus:bg-white transition">
+                    <option>Surat Keterangan Usaha (SKU - Untuk KUR & Pertanian)</option>
+                    <option>Surat Pengantar Pembuatan KK / KTP Baru</option>
+                    <option>Surat Keterangan Tidak Mampu (SKTM)</option>
+                    <option>Surat Keterangan Kehilangan / Pengantar Polsek</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Nomor WhatsApp Aktif</label>
+                <input type="tel" required placeholder="08xxxxxxxxxx" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-emerald-600 focus:bg-white transition">
+            </div>
+            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold p-4 rounded-xl shadow-lg shadow-emerald-700/20 transition duration-200 uppercase tracking-wider text-xs">Kirim Permohonan Surat</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 px-4 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-xs">
+            <div>
+                <h5 class="text-white font-bold text-sm mb-3">PPDI Sidenreng Rappang</h5>
+                <p class="leading-relaxed">Asosiasi resmi profesi perangkat desa Indonesia di Kabupaten Sidenreng Rappang, bersatu dalam peningkatan kapabilitas digital dan perlindungan hak aparatur.</p>
+            </div>
+            <div>
+                <h5 class="text-white font-bold text-sm mb-3">Sekretariat Resmi</h5>
+                <p>Kantor Desa Salobukkang, Kecamatan Dua Pitue,</p>
+                <p>Kabupaten Sidenreng Rappang, Sulawesi Selatan 91653.</p>
+                <p class="mt-2 text-emerald-400 font-bold">Jam Layanan: 08:00 - 15:30 WITA</p>
+            </div>
+            <div>
+                <h5 class="text-white font-bold text-sm mb-3">Falsafah Budaya Suku Bugis</h5>
+                <p class="italic text-slate-300">"Sipakatau, Sipakalebbi, Sipakainge."</p>
+                <p class="mt-2 text-slate-500">Saling memanusiakan, saling menghargai, dan saling mengingatkan ke jalan kebaikan dalam melayani warga desa.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-slate-900 mt-8 pt-6 text-center text-[11px] text-slate-600">
+            <p>&copy; 2026 PPDI Kabupaten Sidenreng Rappang & Pemerintah Desa Salobukkang. Seluruh data diselaraskan untuk pelayanan optimal.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR MOBILE MENU -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        const links = mobileMenu.getElementsByTagName('a');
+        for (let link of links) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
